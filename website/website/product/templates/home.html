@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture</title>
+  <link rel="stylesheet" href="{% static 'stylesheet.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="contaner">
+    <div class="navbar-top">
+      <div class="social-link">
+        <i><img src="website/static/T.webp" alt="" width="30"></i>
+        <i><img src="website/static/i.jpg" alt="" width="30"></i>
+        <i><img src="website/static/M.png" alt="" width="30"></i>
+      </div>
+      <div class="logo">
+        <h3>Furniture</h3>
+      </div>
+      <div class="icon">
+        <i><img src="website/static/T.webp" alt="" width="20px"></i>
+        <i><img src="website/static/i.jpg" alt="" width="20px"></i>
+        <i><img src="website/static/M.png" alt="" width="25px"></i>
+      </div>
+    </div>
+  </div>
+  <div class="main-content">
+    <nav class="navbar navbar-expand-md" id="navbar-color">
+      <div class="container">
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span><i><img src="website/static/menu.jfif" alt="" width="30px"></i></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'product' %}">product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <h1>Make your Home
+        <br> modern design.
+      </h1>
+      <p>"Welcome to TiM Furniture, where style meets comfort and innovation intertwines with craftsmanship. As a
+        leading furniture company, we take pride in transforming spaces into personalized havens. Our curated collection
+        seamlessly blends contemporary trends with timeless designs, ensuring that each piece reflects sophistication
+        and functionality. From modern living room ensembles to ergonomic office solutions, our furniture is a testament
+        to quality and aesthetic appeal. Explore our diverse range that caters to diverse tastes and preferences, and
+        let us elevate your living experience. At [Your Company Name], we don't just furnish homes; we create spaces
+        where memories are made and lifestyles are defined."</p>
+      <div id="btn1"><button>shop now</button></div>
+    </div>
+  </div>
+  <div class="contaner">
+    <h3 class="text-center" style="padding-top: 30px;">services with offer</h3>
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="website/static/first-pic.jpeg" alt="" class="card image top" height="200px">
+          <div class="card-body">
+            <h5 class="card-titel text-center">custom menus</h5>
+            <p class="card-text text-center">Discover personalized design solutions with our custom menu, tailoring
+              furniture to your unique taste and lifestyle for a bespoke home..</p>
+            <div id="btn2" class="text-center"><button>view more</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="website/static/second.jpg" alt="" class="card image top" height="200px">
+          <div class="card-body">
+            <h5 class="card-titel text-center">smartest way</h5>
+            <p class="card-text text-center">Revolutionize your living spaces with our furniture—crafted for comfort,
+              style, and innovation. Experience the smartest way to furnish your home.</p>
+            <div id="btn2" class="text-center"><button>view more</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="website/static/three.png" alt="" class="card image top" height="200px">
+          <div class="card-body">
+            <h5 class="card-titel text-center">user friendly</h5>
+            <p class="card-text text-center">
+              Explore furniture effortlessly with our user-friendly designs. From intuitive online browsing to showroom
+              experiences, we prioritize your comfort in every step of furnishing your space.</p>
+            <div id="btn2" class="text-center"><button>view more</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <footer id="footer">
+      <h1 class="text-center">TiM Furniture</h1>
+      <p class="text-center">"Elevating Homes with Timeless Designs."</p>
+      <div class="icons text-center">
+        <i class="bx bxl-twiter"></i>
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-google"></i>
+        <i class="bx bxl-instagram"></i>
+      </div>
+        <div class="copyright text-center">
+          &copy;copyright <strong><span>TiM Furniture</span></strong>.ALL Right Reserved
+        </div>
+     
+    </footer>
+</body>
+</html>

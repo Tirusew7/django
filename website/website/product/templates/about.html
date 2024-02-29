@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture</title>
+  <link rel="stylesheet" href="{% static 'stylesheet.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="navbar-top">
+            <div class="social-link">
+                <i><img src="T.webp" alt="" width="30"></i>
+                <i><img src="i.jpg" alt="" width="30"></i>
+                <i><img src="M.png" alt="" width="30"></i>
+            </div>
+            <div class="logo">
+                <h3>Furniture</h3>
+            </div>
+            <div class="icon">
+                <i><img src="T.webp" alt="" width="20px"></i>
+                <i><img src="i.jpg" alt="" width="20px"></i>
+                <i><img src="M.png" alt="" width="25px"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <nav class="navbar navbar-expand-md" id="navbar-color">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span><i><img src="website/static/menu.jfif" alt="" width="30px"></i></span>
+                </button>
+             
+                
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">about</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'product' %}">product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">contact</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+        <div class="contaner">
+            <h1 class="text-center" style="margin-top: 50px;">ABOUT</h1>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                        <img src="website/static/three.png" alt="wood">
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                  <div class="row">
+                   
+                      
+                          <div class="">
+                              <h3>{{ about_info.TIM_furni }}</h3>
+                              <p>{{ about_info.TIM_furniture_discription }}</p>
+                          </div>
+                  </div>
+              </div>
+           
+
+                <div class="col-md-6 py-3 py-md-0">
+                    <p>
+                        Welcome to TiM Furniture, where passion meets craftsmanship. With a commitment to
+                        excellence, we curate furniture that transcends trends, blending aesthetics with functionality.
+                        Our journey is rooted in creating spaces where comfort and style harmonize. From innovative
+                        designs to timeless classics, each piece reflects our dedication to quality and your unique
+                        lifestyle. As a leading furniture company, we take pride in transforming houses into homes, and
+                        offices into productive havens. Discover the art of living with TiM Furniture, where every
+                        piece tells a story of comfort, elegance, and enduring beauty</p>
+                    <div id="btn3"><button>Read more...</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <h1 class="text-center">TiM Furniture</h1>
+        <p class="text-center">"Elevating Homes with Timeless Designs."</p>
+        <div class="icons text-center">
+          <i class="bx bxl-twiter"></i>
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-google"></i>
+          <i class="bx bxl-instagram"></i>
+        </div>
+          <div class="copyright text-center">
+            &copy;copyright <strong><span>TiM Furniture</span></strong>.ALL Right Reserved
+          </div>
+       
+      </footer>
+</body>
+
+</html>
